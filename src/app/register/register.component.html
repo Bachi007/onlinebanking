@@ -1,0 +1,25 @@
+<div class="body">
+  
+    <h1>Online Banking</h1>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+  
+      <div class="fadeIn first">
+        <img src="/src/assets/img/registration.png" id="icon"  alt="User Icon" />
+      </div>
+      <form>
+        <input type="text" id="login" class="fadeIn second" name="login" [(ngModel)]="name" placeholder="username">
+        
+        <input type="text" id="login" class="fadeIn second" name="login"[(ngModel)]="email" placeholder="email">
+        <input type="text" id="login" class="fadeIn second" name="login" [(ngModel)]="mobile" placeholder="mobile number">
+        <input type="password" id="password" class="fadeIn third" name="login" [(ngModel)]="password" placeholder="password">
+        <input type="password" id="password" class="fadeIn third" name="login" [(ngModel)]="passwordConf" placeholder="Repeat password">
+        <button (click)="register()" class="btn btn-primary">Create</button>
+      </form>
+      <div id="formFooter">
+        Already have an account? <a class="underlineHover" routerLink="/login">Click here</a>
+      </div>
+  
+    </div>
+  </div>
+</div>
